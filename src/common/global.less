@@ -1,0 +1,122 @@
+// 普通字体颜色
+@font_color: #333;
+//醒目字体颜色
+@dominant_color: #fe397f;
+// 白色背景
+@bg_color: #fff;
+
+//登录注册页面样式
+.my_header {
+  background-color: @bg_color;
+  color: @font_color;
+  font-size: 18px;
+}
+
+.cont {
+  padding: 0.5rem 0.3rem;
+
+  .bottom_border {
+    min-height: 70px;
+  }
+
+  .get_code {
+    color: #ccc;
+    font-size: 15px;
+  }
+
+  .btn {
+    color: @bg_color;
+    background: @dominant_color;
+    margin-top: 0.7rem;
+    font-size: 16px;
+  }
+
+  .reg {
+    color: @dominant_color;
+    margin-top: 0.3rem;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .mint-cell:last-child{
+    background-image: none;
+  }
+}
+
+// 图片列表
+.img_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  li {
+    list-style: none;
+    display: flex;
+    flex-wrap: warp;
+    width: 48%;
+    margin: 0 4% 4% 0;
+    background: #fff;
+    position: relative;
+    > div {
+      width: 100%;
+      padding-bottom: .2rem;
+      p {
+        font-size: 12px;
+        width: 95%;
+        margin-left: .2rem;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; /*强制不换行*/
+      }
+      img {
+        width: 100%;
+      }
+      .lable {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        // padding: 0.2rem;
+        margin-top: .1rem;
+        overflow: hidden;
+        box-sizing: border-box;
+        > span {
+          white-space: nowrap;  /*强制span不换行*/
+          display: inline-block;  /*将span当做块级元素对待*/
+          font-size: 12px;
+          padding: 2px 4px;
+          margin-right: 4px;
+          background: #eee;
+        }
+      }
+      >.num{
+        position: absolute;
+        bottom:1.3rem;
+        left: .2rem;
+        padding: .2rem .1rem;
+        background:rgba(0,0,0,.5);
+        border-radius:50%; 
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+          }
+    }
+ 
+  }
+  li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+.loadMore {
+  // width: 50%;
+  font-size: 16px;
+  text-align: center;
+  // margin: 0.2rem auto 0.5rem;
+  // border: 1px solid @dominant_color;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  color: @dominant_color;
+}
