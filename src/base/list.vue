@@ -9,7 +9,7 @@
         <div>
           <img src="../../static/timg.jpg"
                alt="">
-          <p>粉黛少女的写真集，腿长模…</p>
+          <p>laowang的写真集，腿长模…</p>
           <div class="lable">
             <span>清新</span><span>萌妹子</span><span>尤物</span>
           </div>
